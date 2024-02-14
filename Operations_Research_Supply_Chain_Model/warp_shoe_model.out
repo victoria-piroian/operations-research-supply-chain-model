@@ -1,0 +1,823 @@
+In February of 2006, the WARP Shoe Company is predicted to have an optimal profit of: $10998247.21
+Optimal number of each shoe type to produce:
+	 x[SH002] = 574.00
+	 x[SH005] = 145.37
+	 x[SH011] = 572.00
+	 x[SH013] = 548.26
+	 x[SH019] = 21.90
+	 x[SH021] = 9.85
+	 x[SH024] = 161.43
+	 x[SH025] = 151.05
+	 x[SH027] = 500.57
+	 x[SH029] = 373.31
+	 x[SH031] = 158.16
+	 x[SH032] = 534.23
+	 x[SH034] = 384.03
+	 x[SH038] = 570.00
+	 x[SH039] = 353.06
+	 x[SH040] = 620.00
+	 x[SH041] = 215.60
+	 x[SH042] = 153.17
+	 x[SH044] = 541.58
+	 x[SH045] = 251.35
+	 x[SH047] = 544.75
+	 x[SH048] = 142.01
+	 x[SH050] = 478.91
+	 x[SH057] = 42.86
+	 x[SH058] = 357.11
+	 x[SH060] = 123.58
+	 x[SH061] = 469.09
+	 x[SH062] = 582.00
+	 x[SH063] = 151.90
+	 x[SH065] = 485.13
+	 x[SH071] = 413.16
+	 x[SH076] = 202.66
+	 x[SH077] = 224.55
+	 x[SH078] = 487.59
+	 x[SH080] = 578.00
+	 x[SH081] = 442.51
+	 x[SH082] = 224.13
+	 x[SH087] = 305.59
+	 x[SH088] = 562.38
+	 x[SH090] = 590.00
+	 x[SH093] = 83.93
+	 x[SH094] = 454.22
+	 x[SH095] = 506.83
+	 x[SH096] = 519.00
+	 x[SH105] = 586.00
+	 x[SH106] = 103.56
+	 x[SH110] = 367.59
+	 x[SH113] = 582.00
+	 x[SH116] = 81.69
+	 x[SH117] = 7.19
+	 x[SH118] = 303.29
+	 x[SH121] = 562.00
+	 x[SH127] = 32.53
+	 x[SH134] = 419.92
+	 x[SH142] = 392.14
+	 x[SH144] = 602.00
+	 x[SH145] = 39.32
+	 x[SH146] = 128.50
+	 x[SH147] = 199.86
+	 x[SH149] = 111.70
+	 x[SH150] = 606.00
+	 x[SH154] = 282.98
+	 x[SH165] = 445.10
+	 x[SH168] = 241.17
+	 x[SH173] = 430.99
+	 x[SH176] = 586.00
+	 x[SH183] = 23.49
+	 x[SH185] = 415.51
+	 x[SH187] = 183.22
+	 x[SH188] = 79.17
+	 x[SH194] = 47.11
+	 x[SH195] = 393.25
+	 x[SH197] = 560.00
+	 x[SH201] = 592.00
+	 x[SH203] = 572.00
+	 x[SH205] = 480.06
+	 x[SH209] = 533.09
+	 x[SH213] = 574.00
+	 x[SH217] = 276.41
+	 x[SH221] = 578.00
+	 x[SH223] = 566.00
+	 x[SH224] = 315.17
+	 x[SH225] = 441.70
+	 x[SH226] = 570.00
+	 x[SH227] = 262.55
+	 x[SH229] = 13.02
+	 x[SH232] = 284.01
+	 x[SH233] = 371.49
+	 x[SH234] = 576.00
+	 x[SH235] = 431.37
+	 x[SH236] = 384.63
+	 x[SH238] = 208.91
+	 x[SH241] = 269.88
+	 x[SH244] = 236.72
+	 x[SH248] = 168.56
+	 x[SH249] = 540.73
+	 x[SH253] = 458.63
+	 x[SH254] = 318.51
+	 x[SH256] = 604.00
+	 x[SH258] = 167.96
+	 x[SH259] = 144.36
+	 x[SH261] = 570.00
+	 x[SH262] = 586.00
+	 x[SH265] = 381.00
+	 x[SH269] = 606.00
+	 x[SH270] = 76.52
+	 x[SH273] = 213.09
+	 x[SH274] = 16.11
+	 x[SH276] = 199.03
+	 x[SH277] = 568.00
+	 x[SH281] = 321.87
+	 x[SH282] = 566.00
+	 x[SH284] = 235.35
+	 x[SH286] = 429.85
+	 x[SH287] = 576.00
+	 x[SH288] = 99.14
+	 x[SH289] = 318.04
+	 x[SH295] = 596.00
+	 x[SH299] = 347.64
+	 x[SH300] = 582.00
+	 x[SH308] = 344.61
+	 x[SH312] = 598.00
+	 x[SH313] = 580.00
+	 x[SH314] = 576.00
+	 x[SH316] = 296.66
+	 x[SH317] = 596.00
+	 x[SH320] = 566.00
+	 x[SH325] = 584.00
+	 x[SH328] = 45.49
+	 x[SH329] = 582.00
+	 x[SH334] = 596.00
+	 x[SH338] = 395.63
+	 x[SH340] = 600.00
+	 x[SH341] = 341.50
+	 x[SH342] = 390.66
+	 x[SH345] = 317.10
+	 x[SH347] = 118.21
+	 x[SH348] = 600.00
+	 x[SH349] = 75.69
+	 x[SH352] = 566.00
+	 x[SH356] = 179.34
+	 x[SH359] = 46.50
+	 x[SH361] = 405.34
+	 x[SH362] = 446.64
+	 x[SH365] = 98.88
+	 x[SH366] = 71.91
+	 x[SH367] = 247.76
+	 x[SH369] = 358.89
+	 x[SH372] = 179.02
+	 x[SH373] = 435.61
+	 x[SH378] = 576.00
+	 x[SH381] = 116.11
+	 x[SH384] = 506.64
+	 x[SH395] = 552.00
+	 x[SH397] = 86.14
+	 x[SH399] = 323.32
+	 x[SH400] = 1.50
+	 x[SH407] = 584.00
+	 x[SH410] = 166.52
+	 x[SH411] = 376.51
+	 x[SH415] = 173.69
+	 x[SH417] = 558.00
+	 x[SH418] = 209.18
+	 x[SH419] = 588.00
+	 x[SH421] = 495.40
+	 x[SH423] = 644.00
+	 x[SH425] = 590.00
+	 x[SH427] = 578.00
+	 x[SH429] = 237.84
+	 x[SH430] = 566.00
+	 x[SH435] = 85.61
+	 x[SH438] = 30.27
+	 x[SH444] = 260.57
+	 x[SH445] = 604.00
+	 x[SH447] = 185.77
+	 x[SH449] = 67.40
+	 x[SH451] = 375.03
+	 x[SH453] = 588.00
+	 x[SH456] = 570.00
+	 x[SH459] = 131.84
+	 x[SH462] = 316.95
+	 x[SH464] = 369.57
+	 x[SH465] = 179.29
+	 x[SH466] = 434.17
+	 x[SH467] = 341.04
+	 x[SH469] = 90.10
+	 x[SH470] = 256.43
+	 x[SH471] = 530.67
+	 x[SH473] = 560.00
+	 x[SH474] = 313.01
+	 x[SH476] = 568.00
+	 x[SH477] = 179.99
+	 x[SH478] = 278.14
+	 x[SH479] = 545.38
+	 x[SH481] = 45.84
+	 x[SH483] = 584.00
+	 x[SH487] = 109.77
+	 x[SH489] = 554.52
+	 x[SH490] = 568.00
+	 x[SH491] = 188.32
+	 x[SH492] = 87.80
+	 x[SH494] = 28.03
+	 x[SH495] = 133.97
+	 x[SH497] = 489.51
+	 x[SH498] = 464.20
+	 x[SH500] = 584.00
+	 x[SH501] = 556.00
+	 x[SH507] = 2.97
+	 x[SH508] = 561.96
+	 x[SH511] = 592.00
+	 x[SH512] = 465.79
+	 x[SH513] = 263.25
+	 x[SH514] = 484.39
+	 x[SH516] = 592.00
+	 x[SH521] = 222.81
+	 x[SH523] = 84.82
+	 x[SH525] = 123.69
+	 x[SH527] = 198.29
+	 x[SH532] = 334.44
+	 x[SH534] = 149.00
+	 x[SH535] = 570.00
+	 x[SH536] = 388.78
+	 x[SH543] = 315.18
+	 x[SH546] = 170.83
+	 x[SH553] = 43.12
+	 x[SH556] = 380.91
+	 x[SH557] = 374.85
+	 All shoe types that are not shown above are not produced in the optimal solution; their decision variables have values of zero.
+
+Question 2:
+
+The number of decision variables is: _nvars = 557
+
+The number of constraints is: _ncons = 1353
+
+Question 3:
+
+The RM_Limit[1] constraint is violated.
+The RM_Limit[3] constraint is violated.
+The RM_Limit[7] constraint is violated.
+The RM_Limit[10] constraint is violated.
+The RM_Limit[11] constraint is violated.
+The RM_Limit[15] constraint is violated.
+The RM_Limit[16] constraint is violated.
+The RM_Limit[17] constraint is violated.
+The RM_Limit[18] constraint is violated.
+The RM_Limit[20] constraint is violated.
+The RM_Limit[21] constraint is violated.
+The RM_Limit[22] constraint is violated.
+The RM_Limit[25] constraint is violated.
+The RM_Limit[27] constraint is violated.
+The RM_Limit[29] constraint is violated.
+The RM_Limit[30] constraint is violated.
+The RM_Limit[34] constraint is violated.
+The RM_Limit[35] constraint is violated.
+The RM_Limit[36] constraint is violated.
+The RM_Limit[39] constraint is violated.
+The RM_Limit[40] constraint is violated.
+The RM_Limit[43] constraint is violated.
+The RM_Limit[44] constraint is violated.
+The RM_Limit[48] constraint is violated.
+The RM_Limit[49] constraint is violated.
+The RM_Limit[52] constraint is violated.
+The RM_Limit[53] constraint is violated.
+The RM_Limit[54] constraint is violated.
+The RM_Limit[55] constraint is violated.
+The RM_Limit[57] constraint is violated.
+The RM_Limit[58] constraint is violated.
+The RM_Limit[67] constraint is violated.
+The RM_Limit[68] constraint is violated.
+The RM_Limit[70] constraint is violated.
+The RM_Limit[71] constraint is violated.
+The RM_Limit[72] constraint is violated.
+The RM_Limit[73] constraint is violated.
+The RM_Limit[74] constraint is violated.
+The RM_Limit[78] constraint is violated.
+The RM_Limit[80] constraint is violated.
+The RM_Limit[82] constraint is violated.
+The RM_Limit[83] constraint is violated.
+The RM_Limit[84] constraint is violated.
+The RM_Limit[88] constraint is violated.
+The RM_Limit[89] constraint is violated.
+The RM_Limit[90] constraint is violated.
+The RM_Limit[91] constraint is violated.
+The RM_Limit[95] constraint is violated.
+The RM_Limit[97] constraint is violated.
+The RM_Limit[98] constraint is violated.
+The RM_Limit[99] constraint is violated.
+The RM_Limit[101] constraint is violated.
+The RM_Limit[104] constraint is violated.
+The RM_Limit[107] constraint is violated.
+The RM_Limit[108] constraint is violated.
+The RM_Limit[110] constraint is violated.
+The RM_Limit[111] constraint is violated.
+The RM_Limit[112] constraint is violated.
+The RM_Limit[114] constraint is violated.
+The RM_Limit[115] constraint is violated.
+The RM_Limit[117] constraint is violated.
+The RM_Limit[118] constraint is violated.
+The RM_Limit[119] constraint is violated.
+The RM_Limit[120] constraint is violated.
+The RM_Limit[121] constraint is violated.
+The RM_Limit[122] constraint is violated.
+The RM_Limit[123] constraint is violated.
+The RM_Limit[124] constraint is violated.
+The RM_Limit[125] constraint is violated.
+The RM_Limit[130] constraint is violated.
+The RM_Limit[131] constraint is violated.
+The RM_Limit[135] constraint is violated.
+The RM_Limit[136] constraint is violated.
+The RM_Limit[139] constraint is violated.
+The RM_Limit[140] constraint is violated.
+The RM_Limit[142] constraint is violated.
+The RM_Limit[144] constraint is violated.
+The RM_Limit[147] constraint is violated.
+The RM_Limit[150] constraint is violated.
+The RM_Limit[151] constraint is violated.
+The RM_Limit[157] constraint is violated.
+The RM_Limit[158] constraint is violated.
+The RM_Limit[161] constraint is violated.
+The RM_Limit[162] constraint is violated.
+The RM_Limit[164] constraint is violated.
+The RM_Limit[165] constraint is violated.
+
+Question 4:
+
+The binding constraints for this optimal solution are:
+	 RM_Limit[1] constraint is binding.
+	 RM_Limit[2] constraint is binding.
+	 RM_Limit[5] constraint is binding.
+	 RM_Limit[7] constraint is binding.
+	 RM_Limit[9] constraint is binding.
+	 RM_Limit[10] constraint is binding.
+	 RM_Limit[14] constraint is binding.
+	 RM_Limit[19] constraint is binding.
+	 RM_Limit[20] constraint is binding.
+	 RM_Limit[21] constraint is binding.
+	 RM_Limit[22] constraint is binding.
+	 RM_Limit[31] constraint is binding.
+	 RM_Limit[36] constraint is binding.
+	 RM_Limit[37] constraint is binding.
+	 RM_Limit[40] constraint is binding.
+	 RM_Limit[41] constraint is binding.
+	 RM_Limit[42] constraint is binding.
+	 RM_Limit[46] constraint is binding.
+	 RM_Limit[48] constraint is binding.
+	 RM_Limit[53] constraint is binding.
+	 RM_Limit[55] constraint is binding.
+	 RM_Limit[56] constraint is binding.
+	 RM_Limit[59] constraint is binding.
+	 RM_Limit[61] constraint is binding.
+	 RM_Limit[64] constraint is binding.
+	 RM_Limit[65] constraint is binding.
+	 RM_Limit[68] constraint is binding.
+	 RM_Limit[71] constraint is binding.
+	 RM_Limit[72] constraint is binding.
+	 RM_Limit[73] constraint is binding.
+	 RM_Limit[75] constraint is binding.
+	 RM_Limit[76] constraint is binding.
+	 RM_Limit[77] constraint is binding.
+	 RM_Limit[78] constraint is binding.
+	 RM_Limit[79] constraint is binding.
+	 RM_Limit[80] constraint is binding.
+	 RM_Limit[81] constraint is binding.
+	 RM_Limit[82] constraint is binding.
+	 RM_Limit[84] constraint is binding.
+	 RM_Limit[86] constraint is binding.
+	 RM_Limit[87] constraint is binding.
+	 RM_Limit[88] constraint is binding.
+	 RM_Limit[91] constraint is binding.
+	 RM_Limit[93] constraint is binding.
+	 RM_Limit[94] constraint is binding.
+	 RM_Limit[95] constraint is binding.
+	 RM_Limit[97] constraint is binding.
+	 RM_Limit[98] constraint is binding.
+	 RM_Limit[100] constraint is binding.
+	 RM_Limit[103] constraint is binding.
+	 RM_Limit[104] constraint is binding.
+	 RM_Limit[106] constraint is binding.
+	 RM_Limit[107] constraint is binding.
+	 RM_Limit[108] constraint is binding.
+	 RM_Limit[112] constraint is binding.
+	 RM_Limit[113] constraint is binding.
+	 RM_Limit[114] constraint is binding.
+	 RM_Limit[115] constraint is binding.
+	 RM_Limit[116] constraint is binding.
+	 RM_Limit[117] constraint is binding.
+	 RM_Limit[118] constraint is binding.
+	 RM_Limit[120] constraint is binding.
+	 RM_Limit[121] constraint is binding.
+	 RM_Limit[122] constraint is binding.
+	 RM_Limit[123] constraint is binding.
+	 RM_Limit[124] constraint is binding.
+	 RM_Limit[125] constraint is binding.
+	 RM_Limit[126] constraint is binding.
+	 RM_Limit[127] constraint is binding.
+	 RM_Limit[128] constraint is binding.
+	 RM_Limit[129] constraint is binding.
+	 RM_Limit[130] constraint is binding.
+	 RM_Limit[132] constraint is binding.
+	 RM_Limit[133] constraint is binding.
+	 RM_Limit[134] constraint is binding.
+	 RM_Limit[135] constraint is binding.
+	 RM_Limit[136] constraint is binding.
+	 RM_Limit[138] constraint is binding.
+	 RM_Limit[140] constraint is binding.
+	 RM_Limit[141] constraint is binding.
+	 RM_Limit[142] constraint is binding.
+	 RM_Limit[144] constraint is binding.
+	 RM_Limit[145] constraint is binding.
+	 RM_Limit[146] constraint is binding.
+	 RM_Limit[147] constraint is binding.
+	 RM_Limit[149] constraint is binding.
+	 RM_Limit[150] constraint is binding.
+	 RM_Limit[151] constraint is binding.
+	 RM_Limit[152] constraint is binding.
+	 RM_Limit[154] constraint is binding.
+	 RM_Limit[155] constraint is binding.
+	 RM_Limit[156] constraint is binding.
+	 RM_Limit[157] constraint is binding.
+	 RM_Limit[158] constraint is binding.
+	 RM_Limit[159] constraint is binding.
+	 RM_Limit[160] constraint is binding.
+	 RM_Limit[161] constraint is binding.
+	 RM_Limit[163] constraint is binding.
+	 Non_Neg[SH001] constraint is binding.
+	 Demand_Limit[SH002] constraint is binding.
+	 Non_Neg[SH003] constraint is binding.
+	 Non_Neg[SH004] constraint is binding.
+	 Non_Neg[SH006] constraint is binding.
+	 Non_Neg[SH007] constraint is binding.
+	 Non_Neg[SH008] constraint is binding.
+	 Non_Neg[SH009] constraint is binding.
+	 Non_Neg[SH010] constraint is binding.
+	 Demand_Limit[SH011] constraint is binding.
+	 Non_Neg[SH012] constraint is binding.
+	 Non_Neg[SH014] constraint is binding.
+	 Non_Neg[SH015] constraint is binding.
+	 Non_Neg[SH016] constraint is binding.
+	 Non_Neg[SH017] constraint is binding.
+	 Non_Neg[SH018] constraint is binding.
+	 Non_Neg[SH020] constraint is binding.
+	 Non_Neg[SH022] constraint is binding.
+	 Non_Neg[SH023] constraint is binding.
+	 Non_Neg[SH026] constraint is binding.
+	 Non_Neg[SH028] constraint is binding.
+	 Non_Neg[SH030] constraint is binding.
+	 Non_Neg[SH033] constraint is binding.
+	 Non_Neg[SH035] constraint is binding.
+	 Non_Neg[SH036] constraint is binding.
+	 Non_Neg[SH037] constraint is binding.
+	 Demand_Limit[SH038] constraint is binding.
+	 Demand_Limit[SH040] constraint is binding.
+	 Non_Neg[SH043] constraint is binding.
+	 Non_Neg[SH046] constraint is binding.
+	 Non_Neg[SH049] constraint is binding.
+	 Non_Neg[SH051] constraint is binding.
+	 Non_Neg[SH052] constraint is binding.
+	 Non_Neg[SH053] constraint is binding.
+	 Non_Neg[SH054] constraint is binding.
+	 Non_Neg[SH055] constraint is binding.
+	 Non_Neg[SH056] constraint is binding.
+	 Non_Neg[SH059] constraint is binding.
+	 Demand_Limit[SH062] constraint is binding.
+	 Non_Neg[SH064] constraint is binding.
+	 Non_Neg[SH066] constraint is binding.
+	 Non_Neg[SH067] constraint is binding.
+	 Non_Neg[SH068] constraint is binding.
+	 Non_Neg[SH069] constraint is binding.
+	 Non_Neg[SH070] constraint is binding.
+	 Non_Neg[SH072] constraint is binding.
+	 Non_Neg[SH073] constraint is binding.
+	 Non_Neg[SH074] constraint is binding.
+	 Non_Neg[SH075] constraint is binding.
+	 Non_Neg[SH079] constraint is binding.
+	 Demand_Limit[SH080] constraint is binding.
+	 Non_Neg[SH083] constraint is binding.
+	 Non_Neg[SH084] constraint is binding.
+	 Non_Neg[SH085] constraint is binding.
+	 Non_Neg[SH086] constraint is binding.
+	 Non_Neg[SH089] constraint is binding.
+	 Demand_Limit[SH090] constraint is binding.
+	 Non_Neg[SH091] constraint is binding.
+	 Non_Neg[SH092] constraint is binding.
+	 Non_Neg[SH097] constraint is binding.
+	 Non_Neg[SH098] constraint is binding.
+	 Non_Neg[SH099] constraint is binding.
+	 Non_Neg[SH100] constraint is binding.
+	 Non_Neg[SH101] constraint is binding.
+	 Non_Neg[SH102] constraint is binding.
+	 Non_Neg[SH103] constraint is binding.
+	 Non_Neg[SH104] constraint is binding.
+	 Demand_Limit[SH105] constraint is binding.
+	 Non_Neg[SH107] constraint is binding.
+	 Non_Neg[SH108] constraint is binding.
+	 Non_Neg[SH109] constraint is binding.
+	 Non_Neg[SH111] constraint is binding.
+	 Non_Neg[SH112] constraint is binding.
+	 Demand_Limit[SH113] constraint is binding.
+	 Non_Neg[SH114] constraint is binding.
+	 Non_Neg[SH115] constraint is binding.
+	 Non_Neg[SH119] constraint is binding.
+	 Non_Neg[SH120] constraint is binding.
+	 Demand_Limit[SH121] constraint is binding.
+	 Non_Neg[SH122] constraint is binding.
+	 Non_Neg[SH123] constraint is binding.
+	 Non_Neg[SH124] constraint is binding.
+	 Non_Neg[SH125] constraint is binding.
+	 Non_Neg[SH126] constraint is binding.
+	 Non_Neg[SH128] constraint is binding.
+	 Non_Neg[SH129] constraint is binding.
+	 Non_Neg[SH130] constraint is binding.
+	 Non_Neg[SH131] constraint is binding.
+	 Non_Neg[SH132] constraint is binding.
+	 Non_Neg[SH133] constraint is binding.
+	 Non_Neg[SH135] constraint is binding.
+	 Non_Neg[SH136] constraint is binding.
+	 Non_Neg[SH137] constraint is binding.
+	 Non_Neg[SH138] constraint is binding.
+	 Non_Neg[SH139] constraint is binding.
+	 Non_Neg[SH140] constraint is binding.
+	 Non_Neg[SH141] constraint is binding.
+	 Non_Neg[SH143] constraint is binding.
+	 Demand_Limit[SH144] constraint is binding.
+	 Non_Neg[SH148] constraint is binding.
+	 Demand_Limit[SH150] constraint is binding.
+	 Non_Neg[SH151] constraint is binding.
+	 Non_Neg[SH152] constraint is binding.
+	 Non_Neg[SH153] constraint is binding.
+	 Non_Neg[SH155] constraint is binding.
+	 Non_Neg[SH156] constraint is binding.
+	 Non_Neg[SH157] constraint is binding.
+	 Non_Neg[SH158] constraint is binding.
+	 Non_Neg[SH159] constraint is binding.
+	 Non_Neg[SH160] constraint is binding.
+	 Non_Neg[SH161] constraint is binding.
+	 Non_Neg[SH162] constraint is binding.
+	 Non_Neg[SH163] constraint is binding.
+	 Non_Neg[SH164] constraint is binding.
+	 Non_Neg[SH166] constraint is binding.
+	 Non_Neg[SH167] constraint is binding.
+	 Non_Neg[SH169] constraint is binding.
+	 Non_Neg[SH170] constraint is binding.
+	 Non_Neg[SH171] constraint is binding.
+	 Non_Neg[SH172] constraint is binding.
+	 Non_Neg[SH174] constraint is binding.
+	 Non_Neg[SH175] constraint is binding.
+	 Demand_Limit[SH176] constraint is binding.
+	 Non_Neg[SH177] constraint is binding.
+	 Non_Neg[SH178] constraint is binding.
+	 Non_Neg[SH179] constraint is binding.
+	 Non_Neg[SH180] constraint is binding.
+	 Non_Neg[SH181] constraint is binding.
+	 Non_Neg[SH182] constraint is binding.
+	 Non_Neg[SH184] constraint is binding.
+	 Non_Neg[SH186] constraint is binding.
+	 Non_Neg[SH189] constraint is binding.
+	 Non_Neg[SH190] constraint is binding.
+	 Non_Neg[SH191] constraint is binding.
+	 Non_Neg[SH192] constraint is binding.
+	 Non_Neg[SH193] constraint is binding.
+	 Non_Neg[SH196] constraint is binding.
+	 Demand_Limit[SH197] constraint is binding.
+	 Non_Neg[SH198] constraint is binding.
+	 Non_Neg[SH199] constraint is binding.
+	 Non_Neg[SH200] constraint is binding.
+	 Demand_Limit[SH201] constraint is binding.
+	 Non_Neg[SH202] constraint is binding.
+	 Demand_Limit[SH203] constraint is binding.
+	 Non_Neg[SH204] constraint is binding.
+	 Non_Neg[SH206] constraint is binding.
+	 Non_Neg[SH207] constraint is binding.
+	 Non_Neg[SH208] constraint is binding.
+	 Non_Neg[SH210] constraint is binding.
+	 Non_Neg[SH211] constraint is binding.
+	 Non_Neg[SH212] constraint is binding.
+	 Demand_Limit[SH213] constraint is binding.
+	 Non_Neg[SH214] constraint is binding.
+	 Non_Neg[SH215] constraint is binding.
+	 Non_Neg[SH216] constraint is binding.
+	 Non_Neg[SH218] constraint is binding.
+	 Non_Neg[SH219] constraint is binding.
+	 Non_Neg[SH220] constraint is binding.
+	 Demand_Limit[SH221] constraint is binding.
+	 Non_Neg[SH222] constraint is binding.
+	 Demand_Limit[SH223] constraint is binding.
+	 Demand_Limit[SH226] constraint is binding.
+	 Non_Neg[SH228] constraint is binding.
+	 Non_Neg[SH230] constraint is binding.
+	 Non_Neg[SH231] constraint is binding.
+	 Demand_Limit[SH234] constraint is binding.
+	 Non_Neg[SH237] constraint is binding.
+	 Non_Neg[SH239] constraint is binding.
+	 Non_Neg[SH240] constraint is binding.
+	 Non_Neg[SH242] constraint is binding.
+	 Non_Neg[SH243] constraint is binding.
+	 Non_Neg[SH245] constraint is binding.
+	 Non_Neg[SH246] constraint is binding.
+	 Non_Neg[SH247] constraint is binding.
+	 Non_Neg[SH250] constraint is binding.
+	 Non_Neg[SH251] constraint is binding.
+	 Non_Neg[SH252] constraint is binding.
+	 Non_Neg[SH255] constraint is binding.
+	 Demand_Limit[SH256] constraint is binding.
+	 Non_Neg[SH257] constraint is binding.
+	 Non_Neg[SH260] constraint is binding.
+	 Demand_Limit[SH261] constraint is binding.
+	 Demand_Limit[SH262] constraint is binding.
+	 Non_Neg[SH263] constraint is binding.
+	 Non_Neg[SH264] constraint is binding.
+	 Non_Neg[SH266] constraint is binding.
+	 Non_Neg[SH267] constraint is binding.
+	 Non_Neg[SH268] constraint is binding.
+	 Demand_Limit[SH269] constraint is binding.
+	 Non_Neg[SH271] constraint is binding.
+	 Non_Neg[SH272] constraint is binding.
+	 Non_Neg[SH275] constraint is binding.
+	 Demand_Limit[SH277] constraint is binding.
+	 Non_Neg[SH278] constraint is binding.
+	 Non_Neg[SH279] constraint is binding.
+	 Non_Neg[SH280] constraint is binding.
+	 Demand_Limit[SH282] constraint is binding.
+	 Non_Neg[SH283] constraint is binding.
+	 Non_Neg[SH285] constraint is binding.
+	 Demand_Limit[SH287] constraint is binding.
+	 Non_Neg[SH290] constraint is binding.
+	 Non_Neg[SH291] constraint is binding.
+	 Non_Neg[SH292] constraint is binding.
+	 Non_Neg[SH293] constraint is binding.
+	 Non_Neg[SH294] constraint is binding.
+	 Demand_Limit[SH295] constraint is binding.
+	 Non_Neg[SH296] constraint is binding.
+	 Non_Neg[SH297] constraint is binding.
+	 Non_Neg[SH298] constraint is binding.
+	 Demand_Limit[SH300] constraint is binding.
+	 Non_Neg[SH301] constraint is binding.
+	 Non_Neg[SH302] constraint is binding.
+	 Non_Neg[SH303] constraint is binding.
+	 Non_Neg[SH304] constraint is binding.
+	 Non_Neg[SH305] constraint is binding.
+	 Non_Neg[SH306] constraint is binding.
+	 Non_Neg[SH307] constraint is binding.
+	 Non_Neg[SH309] constraint is binding.
+	 Non_Neg[SH310] constraint is binding.
+	 Non_Neg[SH311] constraint is binding.
+	 Demand_Limit[SH312] constraint is binding.
+	 Demand_Limit[SH313] constraint is binding.
+	 Demand_Limit[SH314] constraint is binding.
+	 Non_Neg[SH315] constraint is binding.
+	 Demand_Limit[SH317] constraint is binding.
+	 Non_Neg[SH318] constraint is binding.
+	 Non_Neg[SH319] constraint is binding.
+	 Demand_Limit[SH320] constraint is binding.
+	 Non_Neg[SH321] constraint is binding.
+	 Non_Neg[SH322] constraint is binding.
+	 Non_Neg[SH323] constraint is binding.
+	 Non_Neg[SH324] constraint is binding.
+	 Demand_Limit[SH325] constraint is binding.
+	 Non_Neg[SH326] constraint is binding.
+	 Non_Neg[SH327] constraint is binding.
+	 Demand_Limit[SH329] constraint is binding.
+	 Non_Neg[SH330] constraint is binding.
+	 Non_Neg[SH331] constraint is binding.
+	 Non_Neg[SH332] constraint is binding.
+	 Non_Neg[SH333] constraint is binding.
+	 Demand_Limit[SH334] constraint is binding.
+	 Non_Neg[SH335] constraint is binding.
+	 Non_Neg[SH336] constraint is binding.
+	 Non_Neg[SH337] constraint is binding.
+	 Non_Neg[SH339] constraint is binding.
+	 Demand_Limit[SH340] constraint is binding.
+	 Non_Neg[SH343] constraint is binding.
+	 Non_Neg[SH344] constraint is binding.
+	 Non_Neg[SH346] constraint is binding.
+	 Demand_Limit[SH348] constraint is binding.
+	 Non_Neg[SH350] constraint is binding.
+	 Non_Neg[SH351] constraint is binding.
+	 Demand_Limit[SH352] constraint is binding.
+	 Non_Neg[SH353] constraint is binding.
+	 Non_Neg[SH354] constraint is binding.
+	 Non_Neg[SH355] constraint is binding.
+	 Non_Neg[SH357] constraint is binding.
+	 Non_Neg[SH358] constraint is binding.
+	 Non_Neg[SH360] constraint is binding.
+	 Non_Neg[SH363] constraint is binding.
+	 Non_Neg[SH364] constraint is binding.
+	 Non_Neg[SH368] constraint is binding.
+	 Non_Neg[SH370] constraint is binding.
+	 Non_Neg[SH371] constraint is binding.
+	 Non_Neg[SH374] constraint is binding.
+	 Non_Neg[SH375] constraint is binding.
+	 Non_Neg[SH376] constraint is binding.
+	 Non_Neg[SH377] constraint is binding.
+	 Demand_Limit[SH378] constraint is binding.
+	 Non_Neg[SH379] constraint is binding.
+	 Non_Neg[SH380] constraint is binding.
+	 Non_Neg[SH382] constraint is binding.
+	 Non_Neg[SH383] constraint is binding.
+	 Non_Neg[SH385] constraint is binding.
+	 Non_Neg[SH386] constraint is binding.
+	 Non_Neg[SH387] constraint is binding.
+	 Non_Neg[SH388] constraint is binding.
+	 Non_Neg[SH389] constraint is binding.
+	 Non_Neg[SH390] constraint is binding.
+	 Non_Neg[SH391] constraint is binding.
+	 Non_Neg[SH392] constraint is binding.
+	 Non_Neg[SH393] constraint is binding.
+	 Non_Neg[SH394] constraint is binding.
+	 Demand_Limit[SH395] constraint is binding.
+	 Non_Neg[SH396] constraint is binding.
+	 Non_Neg[SH398] constraint is binding.
+	 Non_Neg[SH401] constraint is binding.
+	 Non_Neg[SH402] constraint is binding.
+	 Non_Neg[SH403] constraint is binding.
+	 Non_Neg[SH404] constraint is binding.
+	 Non_Neg[SH405] constraint is binding.
+	 Non_Neg[SH406] constraint is binding.
+	 Demand_Limit[SH407] constraint is binding.
+	 Non_Neg[SH408] constraint is binding.
+	 Non_Neg[SH409] constraint is binding.
+	 Non_Neg[SH412] constraint is binding.
+	 Non_Neg[SH413] constraint is binding.
+	 Non_Neg[SH414] constraint is binding.
+	 Non_Neg[SH416] constraint is binding.
+	 Demand_Limit[SH417] constraint is binding.
+	 Demand_Limit[SH419] constraint is binding.
+	 Non_Neg[SH420] constraint is binding.
+	 Non_Neg[SH422] constraint is binding.
+	 Demand_Limit[SH423] constraint is binding.
+	 Non_Neg[SH424] constraint is binding.
+	 Demand_Limit[SH425] constraint is binding.
+	 Non_Neg[SH426] constraint is binding.
+	 Demand_Limit[SH427] constraint is binding.
+	 Non_Neg[SH428] constraint is binding.
+	 Demand_Limit[SH430] constraint is binding.
+	 Non_Neg[SH431] constraint is binding.
+	 Non_Neg[SH432] constraint is binding.
+	 Non_Neg[SH433] constraint is binding.
+	 Non_Neg[SH434] constraint is binding.
+	 Non_Neg[SH436] constraint is binding.
+	 Non_Neg[SH437] constraint is binding.
+	 Non_Neg[SH439] constraint is binding.
+	 Non_Neg[SH440] constraint is binding.
+	 Non_Neg[SH441] constraint is binding.
+	 Non_Neg[SH442] constraint is binding.
+	 Non_Neg[SH443] constraint is binding.
+	 Demand_Limit[SH445] constraint is binding.
+	 Non_Neg[SH446] constraint is binding.
+	 Non_Neg[SH448] constraint is binding.
+	 Non_Neg[SH450] constraint is binding.
+	 Non_Neg[SH452] constraint is binding.
+	 Demand_Limit[SH453] constraint is binding.
+	 Non_Neg[SH454] constraint is binding.
+	 Non_Neg[SH455] constraint is binding.
+	 Demand_Limit[SH456] constraint is binding.
+	 Non_Neg[SH457] constraint is binding.
+	 Non_Neg[SH458] constraint is binding.
+	 Non_Neg[SH460] constraint is binding.
+	 Non_Neg[SH461] constraint is binding.
+	 Non_Neg[SH463] constraint is binding.
+	 Non_Neg[SH468] constraint is binding.
+	 Non_Neg[SH472] constraint is binding.
+	 Demand_Limit[SH473] constraint is binding.
+	 Non_Neg[SH475] constraint is binding.
+	 Demand_Limit[SH476] constraint is binding.
+	 Non_Neg[SH480] constraint is binding.
+	 Non_Neg[SH482] constraint is binding.
+	 Demand_Limit[SH483] constraint is binding.
+	 Non_Neg[SH484] constraint is binding.
+	 Non_Neg[SH485] constraint is binding.
+	 Non_Neg[SH486] constraint is binding.
+	 Non_Neg[SH488] constraint is binding.
+	 Demand_Limit[SH490] constraint is binding.
+	 Non_Neg[SH493] constraint is binding.
+	 Non_Neg[SH496] constraint is binding.
+	 Non_Neg[SH499] constraint is binding.
+	 Demand_Limit[SH500] constraint is binding.
+	 Demand_Limit[SH501] constraint is binding.
+	 Non_Neg[SH502] constraint is binding.
+	 Non_Neg[SH503] constraint is binding.
+	 Non_Neg[SH504] constraint is binding.
+	 Non_Neg[SH505] constraint is binding.
+	 Non_Neg[SH506] constraint is binding.
+	 Non_Neg[SH509] constraint is binding.
+	 Non_Neg[SH510] constraint is binding.
+	 Demand_Limit[SH511] constraint is binding.
+	 Non_Neg[SH515] constraint is binding.
+	 Demand_Limit[SH516] constraint is binding.
+	 Non_Neg[SH517] constraint is binding.
+	 Non_Neg[SH518] constraint is binding.
+	 Non_Neg[SH519] constraint is binding.
+	 Non_Neg[SH520] constraint is binding.
+	 Non_Neg[SH522] constraint is binding.
+	 Non_Neg[SH524] constraint is binding.
+	 Non_Neg[SH526] constraint is binding.
+	 Non_Neg[SH528] constraint is binding.
+	 Non_Neg[SH529] constraint is binding.
+	 Non_Neg[SH530] constraint is binding.
+	 Non_Neg[SH531] constraint is binding.
+	 Non_Neg[SH533] constraint is binding.
+	 Demand_Limit[SH535] constraint is binding.
+	 Non_Neg[SH537] constraint is binding.
+	 Non_Neg[SH538] constraint is binding.
+	 Non_Neg[SH539] constraint is binding.
+	 Non_Neg[SH540] constraint is binding.
+	 Non_Neg[SH541] constraint is binding.
+	 Non_Neg[SH542] constraint is binding.
+	 Non_Neg[SH544] constraint is binding.
+	 Non_Neg[SH545] constraint is binding.
+	 Non_Neg[SH547] constraint is binding.
+	 Non_Neg[SH548] constraint is binding.
+	 Non_Neg[SH549] constraint is binding.
+	 Non_Neg[SH550] constraint is binding.
+	 Non_Neg[SH551] constraint is binding.
+	 Non_Neg[SH552] constraint is binding.
+	 Non_Neg[SH554] constraint is binding.
+	 Non_Neg[SH555] constraint is binding.
+
+Question 5:
+	 Warehouse_Capacity constraint is not binding.
+

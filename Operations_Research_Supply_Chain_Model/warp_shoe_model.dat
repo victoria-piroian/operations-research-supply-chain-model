@@ -1,0 +1,45 @@
+#Victoria_Piroian_piroianv_1006882090 
+#Jonah_Ernest_ernestjo_1007065275
+#Dina_Aynalem_aynalemd_1006830146
+
+# import table Product_Master from Microsoft Access, include the Product_Num and Sales_Price attributes
+# Sales_Price belongs to the set Product_Num
+table Product_Master IN "ODBC" "./WARP2011W.mdb" "Product_Master":
+	Product_Num <- [Product_Num], Sales_Price ~ Sales_Price;
+read table Product_Master;
+
+# import table RM_Master from Microsoft Access, include the RM_Num, Cost, and S_Quantity attributes
+# Cost and S_Quantity belong to the set RM_Num
+table RM_Master IN "ODBC" "./WARP2011W.mdb" "RM_Master":
+	RM_Num <- [RM_Num], Cost ~ Cost, S_Quantity ~ S_Quantity;
+read table RM_Master;
+
+# import table Machine_Master from Microsoft Access, include the Machine_Num and OpCost_per_min attributes
+# OpCost_per_min belongs to the set Machine_Num
+table Machine_Master IN "ODBC" "./WARP2011W.mdb" "Machine_Master":
+	Machine_Num <- [Machine_Num], OpCost_per_min ~ OpCost_per_min;
+read table Machine_Master;
+
+# import table Warehouse_Master from Microsoft Access, include the Warehouse_Num, Op_Cost, and Capacity attributes
+# Op_Cost and Capacity belong to the set Warehouse_Num
+table Warehouse_Master IN "ODBC" "./WARP2011W.mdb" "Warehouse_Master":
+	Warehouse_Num <- [Warehouse_Num], Op_Cost ~ Op_Cost, Capacity ~ Capacity;
+read table Warehouse_Master;
+
+# import table BOM from Microsoft Access, include the Product_Num, RM_Num, and Quantity attributes
+# Quantity belongs to the set [Product_Num,RM_Num]
+table BOM IN "ODBC" "./WARP2011W.mdb" "BOM":
+	[Product_Num,RM_Num], Quantity ~ Quantity;
+read table BOM;
+
+# import table Machine_Assign from Microsoft Access, include the Product_Num, Machine_Num, and Avg_Duration attributes
+# Avg_Duration belongs to the set [Product_Num,Machine_Num]
+table Machine_Assign IN "ODBC" "./WARP2011W.mdb" "Machine_Assign":
+	[Product_Num,Machine_Num], Avg_Duration ~ Avg_Duration;
+read table Machine_Assign;
+
+# import table Demand from Microsoft Access, include the Product_Num and Product_Demand attributes
+# Product_Demand belongs to the set [Product_Num]
+table Demand IN "ODBC" "./WARP2011W.mdb" "Demand":
+	[Product_Num], Product_Demand ~ Product_Demand;
+read table Demand;

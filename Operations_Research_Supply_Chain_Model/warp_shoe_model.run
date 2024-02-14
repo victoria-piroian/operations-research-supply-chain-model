@@ -1,0 +1,301 @@
+#Victoria_Piroian_piroianv_1006882090 
+#Jonah_Ernest_ernestjo_1007065275
+#Dina_Aynalem_aynalemd_1006830146
+
+reset;
+# reset the LP model
+
+# indicate the mod and dat files this solver will be using
+model 'W:\MIE262\WS_2022\WS_2022.mod';
+data 'W:\MIE262\WS_2022\WS_2022.dat';
+
+# specify the type of solver to use
+option solver gurobi;
+
+# solve the LP
+solve;
+
+#######################################################################################
+# print the profit for the optimal solution
+printf 'In February of 2006, the WARP Shoe Company is ' > WS_2022_ORG.out;
+printf 'predicted to have an optimal profit of: $%.2f\n', profit > WS_2022_ORG.out;
+
+#######################################################################################
+# print the optimal solution which consists of the values for each decision variable
+printf 'Optimal number of each shoe type to produce:\n' > WS_2022_ORG.out;
+# use a loop to advance through all the shoe types
+	for{i in Product_Num}{
+		# check if the value of the decision variable is greater than 0
+		# if so, print out the decision variable and its value
+		if x[i] > 0 then
+			printf '\t x[%s] = %.2f\n', i, x[i] > WS_2022_ORG.out; 
+		}
+	# all the other shoes types that were not printed are not produced in the optimal solution
+	printf '\t All shoe types that are not shown above are not produced in the optimal solution;' > WS_2022_ORG.out;
+	printf ' their decision variables have values of zero.\n' > WS_2022_ORG.out;
+
+#######################################################################################
+printf '\nQuestion 2:\n' > WS_2022_ORG.out;
+# question 2 will display the number of variables and constraints in the LP
+
+# print the number of variables in this LP
+printf '\nThe number of decision variables is: ' > WS_2022_ORG.out;
+# count the numbet of variables in this LP
+display _nvars > WS_2022_ORG.out;
+# print the number of constraints in this LP
+printf 'The number of constraints is: ' > WS_2022_ORG.out;
+# count the numbet of constraints in this LP
+display _ncons > WS_2022_ORG.out;
+
+#######################################################################################
+printf 'Question 3:\n' > WS_2022_ORG.out;
+# question 3 will display the constraints that would have been violated if the LP was an integer program
+
+	# if the cost for the total amount of raw material used for all the shoes
+	# is more than thebudget for raw materials,
+	# then the raw materials budget constraint is violated
+	if sum{i in Product_Num, p in RM_Num} Cost[p]*Quantity[i,p]*round(x[i]) > 10000000 then
+		printf '\nThe RM_Budget constraint is violated.' > WS_2022_ORG.out;
+	
+	# loop through the machine operating time constraint that exists for each machine j
+	for {j in Machine_Num}{
+	# if the total operating time for one machine
+	# is greater that the amount of time that machine is allowed to operate for,
+	# then the machine working time constraint is violated for machine j
+		if sum{i in Product_Num} Avg_Duration[i,j]*round(x[i]) > 1209600 then
+			printf '\nThe Machine_Work_Time[%s] constraint is violated.', j > WS_2022_ORG.out;
+		}
+	
+	# loop through the limit of each raw material constraint
+	for {p in RM_Num}{
+		# if the total amount a raw material used in the production of all shoes i that require this material
+		# exceeds the quantity of the raw material available,
+		# then the limit of that raw material constraint is violated
+		if sum{i in Product_Num} Quantity[i,p]*round(x[i]) > S_Quantity[p] then
+			printf '\nThe RM_Limit[%s] constraint is violated.', p > WS_2022_ORG.out;
+		}
+	# loop through the number of pairs of shoe type i the company sells
+	for {i in Product_Num}{
+		# if the production of a shoe type i exceeds the demand for that product
+		# then the demand constraint is violated
+		if round(x[i]) > 2*round(Product_Demand[i]) then
+			printf '\nThe Demand_Limit[%s] constraint is violated.', i > WS_2022_ORG.out;
+		# if the amount of product i produced is a negative number
+		# then the non negativity constraint is violated
+		if round(x[i]) < 0 then
+			printf '\nThe Non_Neg[%s] constraint is violated.', i > WS_2022_ORG.out;
+		}		
+	
+	# if the total amount of pairs of shoes the company produces is larger than the total warehouse capacity,
+	# then the warehouse capacity cpnstraint is violated
+	if sum{i in Product_Num} round(x[i]) > sum {k in Warehouse_Num} Capacity[k] then
+		printf '\nThe Warehouse_Capacity constraint is violated.' > WS_2022_ORG.out;
+		
+#######################################################################################
+printf '\n\nQuestion 4:\n' > WS_2022_ORG.out;
+# question 4 will print all the binding constraints in this LP
+
+printf '\nThe binding constraints for this optimal solution are:\n' > WS_2022_ORG.out;
+	
+	# if the slack of the RM_Budget constraint is 0
+	# then this constraint is binding
+	if RM_Budget.slack == 0 then
+		printf '\t RM_Budget constraint is binding.\n' > WS_2022_ORG.out;
+	
+	# loop through the machine operating time constraint that exists for each machine j
+	for {j in Machine_Num}{
+		# if the slack of the Machine_Work_Time constraint is 0
+		# then this constraint is binding
+		if Machine_Work_Time[j].slack == 0 then
+			printf '\t Machine_Work_Time[%s] constraint is binding.\n', j > WS_2022_ORG.out;
+		}
+		
+	# loop through the max quantity of raw materials constraint that exists for each raw material p
+	for {p in RM_Num}{
+		# if the slack of the RM_Limit constraint is 0
+		# then this constraint is binding
+		if RM_Limit[p].slack == 0 then
+			printf '\t RM_Limit[%s] constraint is binding.\n', p > WS_2022_ORG.out;
+		}
+	# loop through the number of shoe type i the company sells	
+	for {i in Product_Num}{
+		# if the slack of the Demand_Limit constraint is 0
+		# then this constraint is binding
+		if Demand_Limit[i].slack == 0 then
+			printf '\t Demand_Limit[%s] constraint is binding.\n', i > WS_2022_ORG.out;
+		# if the slack of the Non_Neg constraint is 0
+		# then this constraint is binding
+		if Non_Neg[i].slack == 0 then
+			printf '\t Non_Neg[%s] constraint is binding.\n', i > WS_2022_ORG.out;
+		}
+	# if the slack of the Warehouse_Capacity constraint is 0
+	# then this constraint is binding
+	if Warehouse_Capacity.slack == 0 then
+		printf '\t Warehouse_Capacity constraint is binding.\n' > WS_2022_ORG.out;
+		
+#######################################################################################
+printf '\nQuestion 5:\n' > WS_2022_ORG.out;
+# question 5 will determine if the warehouse capacity constraint is binding or not
+# it will help answer the question of whether or not it is optimal to increase the warehouse capacity
+
+	# if the slack of the Warehouse_Capacity constraint is not 0
+	# then this constraint is not binding
+	if Warehouse_Capacity.slack != 0 then
+			printf '\t Warehouse_Capacity constraint is not binding.\n\n' > WS_2022_ORG.out;
+
+#######################################################################################
+#######################################################################################
+
+# Question 6
+# reset the LP model
+reset;
+
+# indicate the mod and dat file this solver will be using
+model 'W:\MIE262\WS_2022\WS_2022_Q6.mod';
+data 'W:\MIE262\WS_2022\WS_2022.dat';
+
+# specify the type of solver to use
+option solver gurobi;
+
+# solve the LP
+solve;
+
+#######################################################################################
+printf '\nQuestion 6:\n' > WS_2022_Q6.out;
+# question 6 solves the model if the machines are limited to working 8 hours a day
+
+# print the value of the profit for the optimal solution
+printf 'Optimal profit for the production of shoes in February 2006 ' > WS_2022_Q6.out;
+printf 'if machines can only operate for 8 hours a day: $%.2f\n', profit > WS_2022_Q6.out;
+
+#######################################################################################
+# print the values of the decision variables under optimality
+printf 'Optimal number of each shoe type to produce:\n' > WS_2022_Q6.out;
+	# use a loop to advance through all the shoe types
+	for{i in Product_Num}{
+		# check if the value of the decision variable is greater than 0
+		# if so print out the decision var and its value
+		if x[i] > 0 then
+			printf '\t x[%s] = %.2f\n', i, x[i] > WS_2022_Q6.out; 
+		}
+	# all the other decision variables that were not printed have values of 0 in the optimal solution
+	printf '\t All shoe types that are not shown above are not produced in the optimal solution;' > WS_2022_Q6.out;
+	printf ' their decision variables have values of zero.\n' > WS_2022_Q6.out;
+	
+#######################################################################################
+printf '\nThe binding constraints for this optimal solution are:\n' > WS_2022_Q6.out;
+	
+	# if the slack of the RM_Budget constraint is 0
+	# then this constraint is binding
+	if RM_Budget.slack == 0 then
+		printf '\t RM_Budget constraint is binding.\n' > WS_2022_Q6.out;
+	
+	# loop through the machine working time constraint that exists for each machine j
+	for {j in Machine_Num}{
+		# if the slack of the Machine_Work_Time constraint is 0
+		# then this constraint is binding
+		if Machine_Work_Time[j].slack == 0 then
+			printf '\t Machine_Work_Time[%s] constraint is binding.\n', j > WS_2022_Q6.out;
+		}
+		
+	# loop through the limit for each raw material constraint
+	for {p in RM_Num}{
+		# if the slack of the RM_Limit constraint is 0
+		# then this constraint is binding
+		if RM_Limit[p].slack == 0 then
+			printf '\t RM_Limit[%s] constraint is binding.\n', p > WS_2022_Q6.out;
+		}
+	# loop through the number of shoe types i the company sells	
+	for {i in Product_Num}{
+		# if the slack of the Demand_Limit constraint is 0
+		# then this constraint is binding
+		if Demand_Limit[i].slack == 0 then
+			printf '\t Demand_Limit[%s] constraint is binding.\n', i > WS_2022_Q6.out;
+		# if the slack of the Non_Neg constraint is 0
+		# then this constraint is binding
+		if Non_Neg[i].slack == 0 then
+			printf '\t Non_Neg[%s] constraint is binding.\n', i > WS_2022_Q6.out;
+		}
+	# if the slack of the Warehouse_Capacity constraint is 0
+	# then this constraint is binding
+	if Warehouse_Capacity.slack == 0 then
+		printf '\t Warehouse_Capacity constraint is binding.\n' > WS_2022_Q6.out;
+				
+#######################################################################################
+#######################################################################################
+
+# Question 7
+# reset the LP model
+reset;
+
+# indicate the mod and dat file this solver will be using
+model 'W:\MIE262\WS_2022\WS_2022_Q7.mod';
+data 'W:\MIE262\WS_2022\WS_2022.dat';
+
+# specify the type of solver to use
+option solver gurobi;
+
+# solve the LP
+solve;
+
+#######################################################################################
+printf '\nQuestion 7:\n' > WS_2022_Q7.out;
+# question 7 solves the model if the raw material budget is $17,000,000
+
+# print the value of the profit for the optimal solution
+printf 'Optimal profit for the production of shoes in February 2006' > WS_2022_Q7.out;
+printf 'if the raw material budget has a limit of $17,000,000: $%.2f\n', profit > WS_2022_Q7.out;
+
+#######################################################################################
+# print the values of the decision variables under optimality
+printf 'Optimal number of each shoe type to produce:\n' > WS_2022_Q7.out;
+	# use a loop to advance through all the decision variables
+	for{i in Product_Num}{
+		# check if the value of the decision variable is greater than 0
+		# if so print out the decision var and its value
+		if x[i] > 0 then
+			printf '\t x[%s] = %.2f\n', i, x[i] > WS_2022_Q7.out; 
+		}
+	# all the other dec. vars. that were not printed have values of 0 in the optimal solution
+	printf '\t All shoe types that are not shown above are not produced in the optimal solution;' > WS_2022_Q7.out;
+	printf ' their decision variables have values of zero.\n' > WS_2022_Q7.out;
+	
+#######################################################################################
+printf '\nThe binding constraints for this optimal solution are:\n' > WS_2022_Q7.out;
+	
+	# if the slack of the RM_Budget constraint is 0
+	# then this constraint is binding
+	if RM_Budget.slack == 0 then
+		printf '\t RM_Budget constraint is binding.\n' > WS_2022_Q7.out;
+	
+	# loop through the machine working time constraint that exists for each machine j
+	for {j in Machine_Num}{
+		# if the slack of the Machine_Work_Time constraint is 0
+		# then this constraint is binding
+		if Machine_Work_Time[j].slack == 0 then
+			printf '\t Machine_Work_Time[%s] constraint is binding.\n', j > WS_2022_Q7.out;
+		}
+		
+	# loop through the limit of raw materials constraint
+	for {p in RM_Num}{
+		# if the slack of the RM_Limit constraint is 0
+		# then this constraint is binding
+		if RM_Limit[p].slack == 0 then
+			printf '\t RM_Limit[%s] constraint is binding.\n', p > WS_2022_Q7.out;
+		}
+	# loop through the number of shoe type i the company sells	
+	for {i in Product_Num}{
+		# if the slack of the Demand_Limit constraint is 0
+		# then this constraint is binding
+		if Demand_Limit[i].slack == 0 then
+			printf '\t Demand_Limit[%s] constraint is binding.\n', i > WS_2022_Q7.out;
+		# if the slack of the Non_Neg constraint is 0
+		# then this constraint is binding
+		if Non_Neg[i].slack == 0 then
+			printf '\t Non_Neg[%s] constraint is binding.\n', i > WS_2022_Q7.out;
+		}
+	# if the slack of the Warehouse_Capacity constraint is 0
+	# then this constraint is binding
+	if Warehouse_Capacity.slack == 0 then
+		printf '\t Warehouse_Capacity constraint is binding.\n' > WS_2022_Q7.out;
+			
