@@ -1,10 +1,10 @@
 # WARP Shoe Production Optimization (Linear Programming)
-
+---
 ## Overview
 This project formulates and solves a large-scale linear programming (LP) model to determine the most profitable monthly production plan for the WARP Shoe Company. Using real operational data, the model decides how many pairs of each shoe type to produce while satisfying raw material limits, machine operating time, warehouse capacity, and demand constraints.
 
 The model is implemented in **AMPL** and solved using the **Gurobi Optimizer**.
-
+---
 ## Problem Description
 At the start of 2006, a major competitor of WARP Shoe went bankrupt, leading analysts to predict that demand for all shoe types would double in February 2006. Management asked for an optimal production plan that maximizes profit while accounting for:
 
@@ -16,7 +16,7 @@ At the start of 2006, a major competitor of WARP Shoe went bankrupt, leading ana
 - Penalty for unmet demand  
 
 > Transportation costs, setup costs, and manufacturing sequence are assumed negligible.
-
+---
 ## Decision Variables
 **xᵢ** : Number of pairs of shoe type *i* produced in February 2006
 
@@ -43,7 +43,7 @@ Maximize total monthly profit:
 - 1,353 constraints  
 
 > The model was originally formulated as an integer program but was relaxed to an LP to obtain solutions within reasonable time.
-
+---
 ## Results
 **Optimal Profit:** $10,998,247.21  
 
@@ -93,3 +93,12 @@ solve;
 - AMPL
 - Gurobi Optimizer
 - Microsoft Access (data preprocessing)
+
+---
+
+## Author
+Victoria Piroian
+
+University of Toronto
+
+Faculty of Applied Science & Engineering, 2022
